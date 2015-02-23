@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+        	<script type="text/javascript" src="controller.js"></script>
+        	<script type="text/javascript" src="server.js"></script>
+        	
+    </head>
+    
+    <body ng-controller="couchCtrl">
+        
+   
+    <h1>Hi!</h1>
+    
+<form ng-submit="submit()">
+    <p>Full Name:<input ng-model="fName" type="text"/></p>
+    <p>User Name:<input ng-model="uName" type="text"/></p>
+    <p>Password:<input ng-model="uPass" type="password"/></p>
+    <p>Email:<input ng-model="uEmail" type="email"/></p>
+    <p>Region:<input ng-model="uRegion" type="text"/></p>
+    <p>Age:<input ng-model="uAge" type="text"/></p>
+        <button>Submit</button>
+    </p>
+</form>
+    
+    <p>{{fName}}</p>
+     </body>
+</html>
